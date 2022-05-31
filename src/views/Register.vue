@@ -41,7 +41,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="name">Password</label>
+                    <label for="password">Password</label>
                     <input
                             v-model="formData.password"
                             type="password"
@@ -61,6 +61,12 @@
                     Register
                 </button>
             </form>
+
+
+            <span class="mt-2">Already have an account?</span>
+            <router-link class="btn btn-link text-primary" to="/login">
+                Login Now
+            </router-link>
         </div>
     </div>
 </template>
@@ -114,14 +120,4 @@
 </script>
 
 <style scoped>
-    .custom-card {
-        width: 300px;
-        max-width: 100%;
-        background: #8db2f6;
-    }
-
-    .user-icon {
-        font-size: 100px;
-        color: #4f355e;
-    }
 </style>
